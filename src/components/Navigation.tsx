@@ -20,7 +20,14 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <span className="text-2xl font-bold text-trust">Refugee Uplift</span>
+            <a href="#home" className="flex items-center gap-3">
+              <img 
+                src="/lovable-uploads/70ca4c88-3915-4170-8434-6ce13f0aa7a1.png" 
+                alt="Refugee Uplift Logo" 
+                className="h-10 w-auto"
+              />
+              <span className="text-2xl font-bold text-trust">Refugee Uplift</span>
+            </a>
           </div>
 
           {/* Desktop Navigation */}

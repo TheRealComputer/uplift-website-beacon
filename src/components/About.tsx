@@ -1,4 +1,4 @@
-import { Heart, Target, Users2 } from 'lucide-react';
+import { Heart, Target, Users2, BookOpen } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
@@ -12,9 +12,9 @@ const About = () => {
               Our Story & Mission
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Founded in December 2020 by passionate young leaders, Refugee Uplift began as a local initiative 
-              in Clarkston, Georgia, and has grown into a multi-state organization dedicated to transforming 
-              lives through education.
+              Founded in December 2020 by passionate student leaders, Refugee Uplift addresses the unique challenges 
+              refugees face when fleeing their home countries and seeking asylum. We provide essential resources 
+              to help refugee families successfully integrate and thrive in their new communities.
             </p>
           </div>
 
@@ -24,14 +24,14 @@ const About = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-foreground mb-4">How We Started</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  What began as a small group of dedicated youth volunteers has evolved into a comprehensive 
-                  support network for refugee families. We saw the unique challenges faced by refugee students 
-                  and knew we had to act.
+                  What began as a small group of dedicated student volunteers has evolved into a comprehensive 
+                  support network for refugee families. We recognized that refugees often face overwhelming 
+                  barriers to integration - from language difficulties to unfamiliar educational systems.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Through one-on-one tutoring, mentorship, and educational support, we've built lasting 
-                  relationships that extend far beyond the classroom. Our approach is personal, culturally 
-                  sensitive, and focused on long-term success.
+                  Our mission focuses on providing the essential resources and support that refugee families 
+                  need to overcome these challenges and build successful futures. We believe that with the right 
+                  support, every refugee student can thrive academically and personally.
                 </p>
               </CardContent>
             </Card>
@@ -70,11 +70,11 @@ const About = () => {
                 <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4">
                   <Users2 className="w-8 h-8 text-secondary" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">Our Approach</h3>
-                <p className="text-muted-foreground">
-                  Youth-led, culturally sensitive, and relationship-focused programming that addresses 
-                  the unique needs of each student and family we serve.
-                </p>
+                 <h3 className="text-xl font-bold text-foreground mb-3">Our Approach</h3>
+                 <p className="text-muted-foreground">
+                   Student-led, culturally sensitive, and relationship-focused programming that addresses 
+                   the unique needs of each student and family we serve.
+                 </p>
               </CardContent>
             </Card>
           </div>
@@ -84,24 +84,30 @@ const About = () => {
             <h3 className="text-2xl font-bold text-foreground text-center mb-8">What We Do</h3>
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-4xl mb-4">📚</div>
-                <h4 className="text-xl font-semibold text-foreground mb-2">One-on-One Tutoring</h4>
-                <p className="text-muted-foreground">
-                  Personalized academic support tailored to each student's learning style and needs.
-                </p>
-              </div>
-              <div>
-                <div className="text-4xl mb-4">🤝</div>
-                <h4 className="text-xl font-semibold text-foreground mb-2">Mentorship</h4>
-                <p className="text-muted-foreground">
-                  Building meaningful relationships that provide guidance, encouragement, and support.
-                </p>
-              </div>
-              <div>
-                <div className="text-4xl mb-4">🎓</div>
+                <div className="w-16 h-16 rounded-full bg-trust/10 flex items-center justify-center mx-auto mb-4">
+                  <BookOpen className="w-8 h-8 text-trust" />
+                </div>
                 <h4 className="text-xl font-semibold text-foreground mb-2">Educational Support</h4>
                 <p className="text-muted-foreground">
-                  Comprehensive assistance with homework, test preparation, and academic planning.
+                  Personalized tutoring and academic assistance tailored to each student's learning needs and goals.
+                </p>
+              </div>
+              <div>
+                <div className="w-16 h-16 rounded-full bg-hope/10 flex items-center justify-center mx-auto mb-4">
+                  <Users2 className="w-8 h-8 text-hope" />
+                </div>
+                <h4 className="text-xl font-semibold text-foreground mb-2">Mentorship</h4>
+                <p className="text-muted-foreground">
+                  Building meaningful relationships that provide guidance, encouragement, and community support.
+                </p>
+              </div>
+              <div>
+                <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4">
+                  <Heart className="w-8 h-8 text-secondary" />
+                </div>
+                <h4 className="text-xl font-semibold text-foreground mb-2">Donation Drives</h4>
+                <p className="text-muted-foreground">
+                  Organizing community drives to provide essential resources and materials for refugee families.
                 </p>
               </div>
             </div>

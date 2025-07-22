@@ -15,39 +15,8 @@ const Hero = () => {
                 <span className="text-transparent bg-gradient-hero bg-clip-text"> Education & Hope</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-                A youth-led nonprofit providing one-on-one tutoring, mentorship, and educational support to refugee families. Together, we're building bridges to brighter futures.
+                A student-led nonprofit providing one-on-one tutoring, mentorship, and educational support to refugee families. Together, we're building bridges to brighter futures.
               </p>
-            </div>
-
-            {/* Impact Stats */}
-            <div className="flex flex-wrap gap-6 md:gap-8">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-hope/10 flex items-center justify-center">
-                  <Users className="w-6 h-6 text-hope" />
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-foreground">100+</div>
-                  <div className="text-sm text-muted-foreground">Families Served</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-trust/10 flex items-center justify-center">
-                  <BookOpen className="w-6 h-6 text-trust" />
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-foreground">$20K+</div>
-                  <div className="text-sm text-muted-foreground">Funds Raised</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center">
-                  <Heart className="w-6 h-6 text-secondary" />
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-foreground">Multi-State</div>
-                  <div className="text-sm text-muted-foreground">Expansion</div>
-                </div>
-              </div>
             </div>
 
             {/* CTA Buttons */}
