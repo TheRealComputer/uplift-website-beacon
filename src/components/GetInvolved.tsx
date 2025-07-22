@@ -30,10 +30,10 @@ const GetInvolved = () => {
                   <CardTitle className="text-2xl">Apply for Leadership</CardTitle>
                 </div>
               </CardHeader>
-              <CardContent>
+              <CardContent className="text-center">
                 <p className="mb-6 text-white/90">
                   Join our student leadership team and help grow Refugee Uplift's impact. 
-                  We're looking for passionate individuals to fill key leadership roles.
+                  We're looking for passionate undergraduate students to fill key leadership roles.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   <div className="text-white/90">
@@ -55,10 +55,16 @@ const GetInvolved = () => {
                     </ul>
                   </div>
                 </div>
-                <Button variant="outline" className="bg-white/10 border-white/30 text-white hover:bg-white/20">
-                  Apply for Leadership
-                  <ExternalLink className="w-4 h-4 ml-2" />
-                </Button>
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfN2vR4br6G9wB_4Gr_kOmqVZWS6UOLp-ZEl3617DQQlyTzXQ/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline" className="bg-white/10 border-white/30 text-white hover:bg-white/20">
+                    Apply for Leadership
+                    <ExternalLink className="w-4 h-4 ml-2" />
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           </div>
@@ -76,20 +82,26 @@ const GetInvolved = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="mb-6 text-muted-foreground">
-                  Make a direct impact by volunteering as a tutor or mentor. 
-                  We provide training and ongoing support to help you succeed.
-                </p>
-                <ul className="space-y-2 mb-6 text-muted-foreground">
-                  <li>• One-on-one tutoring sessions</li>
-                  <li>• Group study support</li>
-                  <li>• Event assistance</li>
-                  <li>• Administrative support</li>
-                </ul>
-                <Button variant="outline">
-                  Volunteer Today
-                  <ExternalLink className="w-4 h-4 ml-2" />
-                </Button>
+                <div className="flex items-start justify-between">
+                  <div className="flex-1">
+                    <p className="mb-6 text-muted-foreground">
+                      Make a direct impact by volunteering as a tutor or mentor. 
+                      We're looking for high school students who want to make a difference.
+                    </p>
+                    <ul className="space-y-2 mb-6 text-muted-foreground">
+                      <li>• One-on-one tutoring sessions</li>
+                      <li>• Group study support</li>
+                      <li>• Event assistance</li>
+                      <li>• Administrative support</li>
+                    </ul>
+                  </div>
+                  <div className="ml-6">
+                    <Button variant="outline">
+                      Volunteer Today
+                      <ExternalLink className="w-4 h-4 ml-2" />
+                    </Button>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
