@@ -1,5 +1,8 @@
 import { Calendar } from 'lucide-react';
 
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
+
 const Updates = () => {
   const updates = [
     {
@@ -70,7 +73,9 @@ const Updates = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen">
+      <Navigation />
+      <div className="pt-20">
       {/* Newsletter Banner */}
       <div className="bg-gradient-hero py-12">
         <div className="container mx-auto px-4 text-center">
@@ -138,6 +143,8 @@ const Updates = () => {
           </div>
         </div>
       </section>
+      </div>
+      <Footer />
     </div>
   );
 };

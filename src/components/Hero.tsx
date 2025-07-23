@@ -4,7 +4,7 @@ const heroImageUrl = '/lovable-uploads/a810f2f7-37cc-40a3-90a0-9587aff5ea66.png'
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center pt-16 bg-gradient-warm">
+    <section id="home" className="min-h-screen flex items-center pt-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
@@ -21,11 +21,24 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="group">
-                Apply to Lead
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </Button>
-              <Button variant="outline" size="lg">
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfN2vR4br6G9wB_4Gr_kOmqVZWS6UOLp-ZEl3617DQQlyTzXQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="hero" size="lg" className="group">
+                  Apply to Lead
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </a>
+              <Button 
+                variant="outline" 
+                size="lg"
+                onClick={() => {
+                  const aboutSection = document.getElementById('about');
+                  aboutSection?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Learn More
               </Button>
             </div>

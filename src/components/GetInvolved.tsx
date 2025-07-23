@@ -118,16 +118,10 @@ const GetInvolved = () => {
                   Your donation directly supports tutoring programs, educational materials, 
                   and expanding our reach to more refugee families.
                 </p>
-                <div className="space-y-4">
-                  <div className="text-sm text-muted-foreground">
-                    <strong>$25</strong> - Provides tutoring materials for one student<br/>
-                    <strong>$50</strong> - Funds a week of tutoring sessions<br/>
-                    <strong>$100</strong> - Supports a family for one month
-                  </div>
-                  <Button variant="donate" className="w-full">
-                    Donate Now
-                    <Heart className="w-4 h-4 ml-2" />
-                  </Button>
+                <div className="text-center">
+                  <p className="text-lg font-semibold text-foreground">
+                    Zelle: refugee.uplift@gmail.com
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -136,7 +130,7 @@ const GetInvolved = () => {
       </div>
       
       {/* Newsletter Section */}
-      <div className="bg-gentle/30 py-16">
+      <div className="bg-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <div className="flex items-center justify-center gap-4 mb-6">

@@ -13,7 +13,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-2 text-hope">
               <Heart className="w-4 h-4" />
-              <span className="text-sm">Youth-led • Community-focused</span>
+              <span className="text-sm">Student-led • Community-focused</span>
             </div>
           </div>
 
@@ -23,11 +23,7 @@ const Footer = () => {
             <div className="space-y-2 text-white/80">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>contact@refugeeuplift.org</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4" />
-                <span>Based in Clarkston, GA • Expanding Nationwide</span>
+                <span>refugee.uplift@gmail.com</span>
               </div>
             </div>
           </div>
