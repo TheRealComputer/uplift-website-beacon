@@ -3,7 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-12 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -11,7 +11,7 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Our Story & Mission
             </h2>
-            <div className="bg-white/70 backdrop-blur-sm rounded-lg shadow-card p-8 max-w-4xl mx-auto">
+            <div className="bg-white/70 backdrop-blur-sm rounded-lg shadow-card border-2 border-black p-8 max-w-4xl mx-auto">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Refugee Uplift was founded in 2020 by a group of high school students in Clarkston who wanted to support refugee families adjusting to life in a new country. It began with handing out laptops and supplies to a few families and gradually grew into a steady support network for the community.
               </p>
@@ -25,7 +25,7 @@ const About = () => {
           </div>
 
           {/* What We Do */}
-          <div className="bg-white/50 backdrop-blur-sm rounded-lg shadow-card p-8">
+          <div className="bg-white/50 backdrop-blur-sm rounded-lg shadow-card border-2 border-black p-8">
             <h3 className="text-2xl font-bold text-foreground text-center mb-8">What We Do</h3>
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>

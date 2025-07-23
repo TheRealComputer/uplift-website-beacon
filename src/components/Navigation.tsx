@@ -1,17 +1,18 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Our Team', href: '/team' },
-    { name: 'Get Involved', href: '#get-involved' },
-    { name: 'Updates', href: '/updates' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/', type: 'link' },
+    { name: 'About', href: '#about', type: 'scroll' },
+    { name: 'Our Team', href: '/team', type: 'link' },
+    { name: 'Get Involved', href: '#get-involved', type: 'scroll' },
+    { name: 'Updates', href: '/updates', type: 'link' },
+    { name: 'Contact', href: '#contact', type: 'scroll' },
   ];
 
   return (
@@ -20,26 +21,36 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="#home" className="flex items-center gap-3">
+            <Link to="/" className="flex items-center gap-3">
               <img 
                 src="/lovable-uploads/70ca4c88-3915-4170-8434-6ce13f0aa7a1.png" 
                 alt="Refugee Uplift Logo" 
                 className="h-10 w-auto"
               />
               <span className="text-2xl font-bold text-trust">Refugee Uplift</span>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-foreground hover:text-trust transition-colors duration-200 font-medium"
-              >
-                {item.name}
-              </a>
+              item.type === 'link' ? (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="text-foreground hover:text-trust transition-colors duration-200 font-medium"
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-foreground hover:text-trust transition-colors duration-200 font-medium"
+                >
+                  {item.name}
+                </a>
+              )
             ))}
             <Button variant="donate" size="sm">
               Donate
@@ -63,14 +74,25 @@ const Navigation = () => {
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-3">
               {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-foreground hover:text-trust transition-colors duration-200 font-medium py-2"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </a>
+                item.type === 'link' ? (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="text-foreground hover:text-trust transition-colors duration-200 font-medium py-2"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-foreground hover:text-trust transition-colors duration-200 font-medium py-2"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                )
               ))}
               <Button variant="donate" size="sm" className="mt-4 self-start">
                 Donate

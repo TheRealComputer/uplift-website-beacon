@@ -5,15 +5,15 @@ import { UserPlus, Heart, Megaphone, Mail, ExternalLink } from 'lucide-react';
 
 const GetInvolved = () => {
   return (
-    <section id="get-involved" className="py-20 bg-primary/90">
+    <section id="get-involved" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Join Our Movement
             </h2>
-            <p className="text-lg text-white/90 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               There are many ways to get involved and make a difference in the lives of refugee students. 
               Whether you want to lead, volunteer, donate, or stay informed, we welcome your support.
             </p>
@@ -21,7 +21,7 @@ const GetInvolved = () => {
 
           {/* Leadership Opportunities */}
           <div className="mb-16">
-            <Card className="shadow-card border-0 bg-gradient-hero text-white overflow-hidden">
+            <Card className="shadow-card border-2 border-black bg-gradient-hero text-white overflow-hidden">
               <CardHeader>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
@@ -70,7 +70,7 @@ const GetInvolved = () => {
           {/* Volunteer and Donate */}
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Volunteer */}
-            <Card className="shadow-card border-0 hover:shadow-soft transition-all duration-300">
+            <Card className="shadow-card border-2 border-black hover:shadow-soft transition-all duration-300">
               <CardHeader>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-hope/10 flex items-center justify-center">
@@ -104,7 +104,7 @@ const GetInvolved = () => {
             </Card>
 
             {/* Donation */}
-            <Card className="shadow-card border-0 bg-hope/5 hover:shadow-soft transition-all duration-300">
+            <Card className="shadow-card border-2 border-black bg-hope/5 hover:shadow-soft transition-all duration-300">
               <CardHeader>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-hope/10 flex items-center justify-center">
@@ -125,38 +125,6 @@ const GetInvolved = () => {
                 </div>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </div>
-      
-      {/* Newsletter Section */}
-      <div className="bg-white py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <div className="flex items-center justify-center gap-4 mb-6">
-              <div className="w-12 h-12 rounded-full bg-trust/10 flex items-center justify-center">
-                <Mail className="w-6 h-6 text-trust" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground">Stay Connected</h3>
-            </div>
-            <p className="text-muted-foreground mb-8">
-              Subscribe to our newsletter to get updates on our impact, upcoming events, 
-              and ways to get involved in your community.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <Input 
-                type="email" 
-                placeholder="Enter your email address"
-                className="bg-white flex-1"
-              />
-              <Button variant="default">
-                Subscribe
-                <Megaphone className="w-4 h-4 ml-2" />
-              </Button>
-            </div>
-            <p className="text-xs text-muted-foreground mt-4">
-              We respect your privacy and will never share your information.
-            </p>
           </div>
         </div>
       </div>
