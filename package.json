@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://TheRealComputer.github.io/uplift-website-beacon",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
