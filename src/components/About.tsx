@@ -13,56 +13,15 @@ const About = () => {
             </h2>
             <div className="bg-white/70 backdrop-blur-sm rounded-lg shadow-card p-8 max-w-4xl mx-auto">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Founded in December 2020 by passionate student leaders, Refugee Uplift addresses the unique challenges 
-                refugees face when fleeing their home countries and seeking asylum. What began as a small group of 
-                dedicated student volunteers has evolved into a comprehensive support network for refugee families. 
-                We recognized that refugees often face overwhelming barriers to integration - from language difficulties 
-                to unfamiliar educational systems. Our mission focuses on providing the essential resources and support 
-                that refugee families need to overcome these challenges and build successful futures in their new communities.
+                Refugee Uplift was founded in 2020 by a group of high school students in Clarkston who wanted to support refugee families adjusting to life in a new country. It began with handing out laptops and supplies to a few families and gradually grew into a steady support network for the community.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+                Over the years, we have focused on helping families navigate the challenges of resettlement, from understanding school systems to improving language skills, through one on one mentorship and tutoring. Our work is shaped by the needs of the families we serve and our commitment to making their transition a little easier.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+                Looking ahead, our vision is to expand refugee access to educational and career focused resources, collaborate with other organizations serving refugee communities, and foster a growing network of support as these communities build their lives here. We aim to create opportunities that help families not just adjust but thrive in their new environments.
               </p>
             </div>
-          </div>
-
-          {/* Mission, Vision, Approach */}
-          <div className="grid md:grid-cols-3 gap-8 mb-20">
-            <Card className="shadow-card border-0 bg-white/70 backdrop-blur-sm hover:shadow-soft transition-all duration-300">
-              <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 rounded-full bg-trust/10 flex items-center justify-center mx-auto mb-4">
-                  <Heart className="w-8 h-8 text-trust" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">Our Mission</h3>
-                <p className="text-muted-foreground">
-                  To provide personalized educational support and mentorship that empowers refugee students 
-                  to achieve academic success and build brighter futures.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-card border-0 bg-white/70 backdrop-blur-sm hover:shadow-soft transition-all duration-300">
-              <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 rounded-full bg-hope/10 flex items-center justify-center mx-auto mb-4">
-                  <Target className="w-8 h-8 text-hope" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">Our Vision</h3>
-                <p className="text-muted-foreground">
-                  A world where every refugee student has access to quality education and the support 
-                  they need to thrive in their new communities.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-card border-0 bg-white/70 backdrop-blur-sm hover:shadow-soft transition-all duration-300">
-              <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4">
-                  <Users2 className="w-8 h-8 text-secondary" />
-                </div>
-                 <h3 className="text-xl font-bold text-foreground mb-3">Our Approach</h3>
-                 <p className="text-muted-foreground">
-                   Student-led, culturally sensitive, and relationship-focused programming that addresses 
-                   the unique needs of each student and family we serve.
-                 </p>
-              </CardContent>
-            </Card>
           </div>
 
           {/* What We Do */}

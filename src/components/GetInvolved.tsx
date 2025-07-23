@@ -5,15 +5,15 @@ import { UserPlus, Heart, Megaphone, Mail, ExternalLink } from 'lucide-react';
 
 const GetInvolved = () => {
   return (
-    <section id="get-involved" className="py-20 bg-background">
+    <section id="get-involved" className="py-20 bg-primary/90">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Join Our Movement
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-white/90 max-w-3xl mx-auto">
               There are many ways to get involved and make a difference in the lives of refugee students. 
               Whether you want to lead, volunteer, donate, or stay informed, we welcome your support.
             </p>
@@ -35,24 +35,22 @@ const GetInvolved = () => {
                   Join our student leadership team and help grow Refugee Uplift's impact. 
                   We're looking for passionate undergraduate students to fill key leadership roles.
                 </p>
-                <div className="grid md:grid-cols-2 gap-4 mb-6">
-                  <div className="text-white/90">
-                    <h4 className="font-semibold mb-2">Available Positions:</h4>
-                    <ul className="space-y-1 text-sm">
-                      <li>• Director of Outreach</li>
-                      <li>• Director of Marketing</li>
-                      <li>• Co-Director of Education</li>
-                      <li>• Director of Finance and Fundraising</li>
-                    </ul>
+                <div className="space-y-4 mb-6 text-white/90">
+                  <div>
+                    <h4 className="font-semibold mb-1">Director of Outreach:</h4>
+                    <p className="text-sm">Build relationships with organizations, coordinate partnerships, and lead community engagement efforts.</p>
                   </div>
-                  <div className="text-white/90">
-                    <h4 className="font-semibold mb-2">What You'll Do:</h4>
-                    <ul className="space-y-1 text-sm">
-                      <li>• Lead strategic initiatives</li>
-                      <li>• Coordinate programs</li>
-                      <li>• Build community partnerships</li>
-                      <li>• Mentor volunteers</li>
-                    </ul>
+                  <div>
+                    <h4 className="font-semibold mb-1">Director of Marketing:</h4>
+                    <p className="text-sm">Manage social media, design campaigns, and develop strategies to raise awareness for our mission.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Co-Director of Education:</h4>
+                    <p className="text-sm">Oversee tutoring programs, curriculum development, and educational initiatives for refugee students.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Director of Finance & Fundraising:</h4>
+                    <p className="text-sm">Handle budgeting, fundraising events, grant writing, and financial planning for the organization.</p>
                   </div>
                 </div>
                 <a 

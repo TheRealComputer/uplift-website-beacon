@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Heart, Users, BookOpen, ArrowRight } from 'lucide-react';
-import heroImage from '@/assets/hero-image.jpg';
+const heroImageUrl = '/lovable-uploads/a810f2f7-37cc-40a3-90a0-9587aff5ea66.png';
 
 const Hero = () => {
   return (
@@ -36,7 +36,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-hero rounded-2xl transform rotate-3 opacity-20"></div>
               <img
-                src={heroImage}
+                src={heroImageUrl}
                 alt="Students learning together in a supportive environment"
                 className="relative rounded-2xl shadow-soft w-full h-auto"
               />
